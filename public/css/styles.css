@@ -3,12 +3,12 @@ html {
 }
 
 body {
-    background-color: #251D3A;
+    background-color: #E2DDD7;
 }
 
 h1 {
     font-size: 4em;
-    color: #fff;
+    color: #06113C;
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -57,13 +57,17 @@ p {
 }
 
 
-h2.title-animation {
+.title-animation {
     opacity: 1;
     transition: all 0.5s ease;
     animation: flipInX;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
+}
+
+.container {
+    padding: 0;
 }
 
 /*************** NavBar *****************/
@@ -126,8 +130,9 @@ h2.title-animation {
 
 .line {
     width: 100%;
-    height: 3px;
-    background-color: #E04D01;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #EE7447;
     margin: 3px;
     transition: all 0.8s;
 }
@@ -146,10 +151,7 @@ h2.title-animation {
 }
 
 /***************** Header *****************/
-#header {
-    margin-top: 35px;
-    overflow-y: auto;
-}
+
 
 .title {
     margin-top: 200px;
@@ -158,12 +160,12 @@ h2.title-animation {
 
 .profile-img {
     position: absolute;
-    top: 0px;
-    right: 0;
+    top: 59px;
+    right: 100px;
     z-index: -1;
 }
 
-/* About Me */
+/****************** About Me *************/
 #about-me {
     margin-top: 300px;
     padding: 3% 7%;
