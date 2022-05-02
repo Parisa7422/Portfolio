@@ -1,12 +1,8 @@
 const menuIcon = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector(".navbar");
 const progresses = document.querySelectorAll(".progress-done");
-const aboutTitle = document.querySelector("h2");
+const titles = document.querySelectorAll("h2");
 
-//Title
-setTimeout(() => {
-  aboutTitle.classList.add("animate__animated", "animate__flipInX");
-}, 500);
 //Navbar
 menuIcon.addEventListener("click", function () {
   navbar.classList.toggle("change");
@@ -21,19 +17,44 @@ progresses.forEach((progress) => {
 });
 
 // Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: 40.008, lng: 28.641 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
+// function initMap() {
+//   // The location of Uluru
+//   const uluru = { lat: 40.008, lng: 28.641 };
+//   // The map, centered at Uluru
+//   const map = new google.maps.Map(document.getElementById("map"), {
+//     zoom: 4,
+//     center: uluru,
+//   });
+//   // The marker, positioned at Uluru
+//   const marker = new google.maps.Marker({
+//     position: uluru,
+//     map: map,
+//   });
+// }
 
-window.initMap = initMap;
+// window.initMap = initMap;
+
+//Intersection Observer
+const options = {
+  threshold: 0,
+  rootMargin: "-150px",
+};
+const appearOnScroll = new IntersectionObserver(function (
+  entires,
+  appearOnScroll
+) {
+  entires.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      console.log(entry.target);
+      entry.target.classList.add("title-animation");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+options);
+
+titles.forEach((title) => {
+  appearOnScroll.observe(title);
+});
