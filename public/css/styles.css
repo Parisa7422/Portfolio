@@ -10,7 +10,7 @@ h1 {
     font-size: 4em;
     color: #06113C;
     letter-spacing: 2px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sriracha', cursive;
 }
 
 h2 {
@@ -68,6 +68,7 @@ p {
 
 .container {
     padding: 0;
+
 }
 
 /*************** NavBar *****************/
@@ -157,12 +158,40 @@ p {
     margin-top: 200px;
 }
 
+.arrow-icon {
+    position: absolute;
+    left: 398px;
+    top: 183px;
+}
+
+.header-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
 .profile-img {
     position: absolute;
     top: 38px;
     right: 100px;
     z-index: -1;
+}
+
+.btn-hire-me {
+    width: 247px;
+    height: 70px;
+    position: absolute;
+    right: 728px;
+    margin: 10px 0;
+    border-radius: 19px;
+    border: 3pt solid #EE7447;
+    background-color: #E2DDD7;
+    color: #EE7447;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 70px;
+    padding: 0;
+    font-family: 'Sriracha', cursive;
 }
 
 /****************** About Me *************/
