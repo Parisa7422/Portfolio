@@ -120,8 +120,8 @@ p {
     height: 40px;
     position: fixed;
     cursor: pointer;
-    left: 120px;
-    top: 35px;
+    left: 100px;
+    top: 66px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -133,7 +133,7 @@ p {
     height: 5px;
     border-radius: 30px;
     background-color: #EE7447;
-    margin: 3px;
+    margin: 3px 0px;
     transition: all 0.8s;
 }
 
@@ -160,7 +160,7 @@ p {
 
 .profile-img {
     position: absolute;
-    top: 59px;
+    top: 38px;
     right: 100px;
     z-index: -1;
 }
