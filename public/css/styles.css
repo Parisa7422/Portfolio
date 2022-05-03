@@ -27,10 +27,10 @@ h2 {
 
 
 h3 {
-    color: #fff;
+    color: #06113C;
     font-size: 2rem;
     letter-spacing: 1px;
-    text-align: center;
+
 
 }
 
@@ -44,10 +44,7 @@ p {
 }
 
 #skills h2 {
-    font-size: 2.5 rem;
-    color: #fff;
-    letter-spacing: 2px;
-
+    color: #06113C;
 }
 
 #contact-me h2 {
@@ -207,9 +204,21 @@ p {
     top: 0;
 }
 
+.second-title-about {
+    position: absolute;
+    top: 586px;
+}
 
-/* Skills Section */
+.about-arrow {
+    position: absolute;
+    right: 170px;
+    top: 630px;
+}
+
+/************* Skills Section ****************/
 #skills {
+    height: 100vh;
+    margin-top: 100px;
     padding: 5% 7%;
 }
 
@@ -218,7 +227,7 @@ p {
 }
 
 .skill-padding {
-    padding-top: 5%;
+
     padding-right: 7%;
     position: relative;
 
@@ -226,10 +235,12 @@ p {
 
 .title-shape {
     height: 18px;
-    width: 505px;
-    background-color: #FF7700;
+    width: 290px;
+    border-radius: 9px;
+    background-color: #EE7447;
     position: absolute;
-    top: 105px;
+    top: 62px;
+    left: 15px;
     z-index: -1;
 }
 
