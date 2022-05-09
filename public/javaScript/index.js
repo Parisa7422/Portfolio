@@ -2,18 +2,11 @@ const menuIcon = document.querySelector(".hamburger-menu");
 const navbar = document.querySelector(".navbar");
 const progresses = document.querySelectorAll(".progress-done");
 const titles = document.querySelectorAll("h2");
+const progress = document.querySelectorAll(".progress");
 
 //Navbar
 menuIcon.addEventListener("click", function () {
   navbar.classList.toggle("change");
-});
-
-//Progress
-progresses.forEach((progress) => {
-  setTimeout(() => {
-    progress.style.opacity = 1;
-    progress.style.width = progress.getAttribute("data-done") + "%";
-  }, 500);
 });
 
 // Initialize and add the map
@@ -35,9 +28,10 @@ progresses.forEach((progress) => {
 // window.initMap = initMap;
 
 //Intersection Observer
+//Titles loaded on scroll
 const options = {
   threshold: 0,
-  rootMargin: "-150px",
+  rootMargin: "-100px",
 };
 const appearOnScroll = new IntersectionObserver(function (
   entires,
@@ -57,4 +51,26 @@ options);
 
 titles.forEach((title) => {
   appearOnScroll.observe(title);
+});
+
+//ProgressBar loading on scroll
+const appearProgressbarOnScroll = new IntersectionObserver(function (
+  entires,
+  appearProgressbarOnScroll
+) {
+  entires.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      console.log(entry.target);
+      entry.target.style.opacity = 1;
+      entry.target.style.width = entry.target.getAttribute("data-done") + "%";
+      appearProgressbarOnScroll.unobserve(entry.target);
+    }
+  });
+},
+options);
+
+progresses.forEach((progress) => {
+  appearProgressbarOnScroll.observe(progress);
 });
