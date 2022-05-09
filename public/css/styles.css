@@ -183,6 +183,20 @@ p {
     line-height: 70px;
     padding: 0;
     font-family: 'Sriracha', cursive;
+    background-position: 0 -100%;
+    background-repeat: repeat-x;
+    transition: background-position 1s ease;
+}
+
+.btn-hire-me:hover,
+.send-btn:hover {
+    background-position: 80% 50%;
+    border-color: #EE7447;
+    color: #fff;
+}
+
+.liquidbg {
+    background-image: url(../images/btn-bg.png);
 }
 
 /****************** About Me *************/
@@ -327,6 +341,9 @@ textarea {
     border: 3pt solid #EE7447;
     background-color: #E2DDD7;
     color: #EE7447;
+    background-position: 0 -100%;
+    background-repeat: repeat-x;
+    transition: background-position 1s ease;
 
 }
 
