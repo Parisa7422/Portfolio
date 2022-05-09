@@ -218,6 +218,10 @@ p {
     padding: 7% 7%;
 }
 
+.skill-description {
+    padding-right: 15%;
+}
+
 .developer-skill {
 
     margin-top: 5%
@@ -334,16 +338,20 @@ textarea {
 
 
 .progress {
-    height: 30px;
+    height: 19px;
     width: 300px;
     border: 0.5px solid #fff;
     margin: auto;
     padding: 0;
+    border-radius: 9px;
     background-color: #251D3A;
 
 }
 
 .progress-done {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 9px;
     height: 100%;
     background: linear-gradient(to left, #E04D01, #FF7700);
     box-shadow: 0 3px -5px #E04D01, 0 2px 5px #E04D01;
