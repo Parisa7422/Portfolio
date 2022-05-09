@@ -244,8 +244,18 @@ p {
     z-index: -1;
 }
 
+.progressbar {
+    position: relative;
+}
+
 .item-margin {
-    height: 50px;
+    height: 40px;
+}
+
+.skill-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
