@@ -3,6 +3,7 @@ const navbar = document.querySelector(".navbar");
 const progresses = document.querySelectorAll(".progress-done");
 const titles = document.querySelectorAll("h2");
 const progress = document.querySelectorAll(".progress");
+const email = document.getElementById("email");
 
 //Navbar
 menuIcon.addEventListener("click", function () {
@@ -74,3 +75,5 @@ options);
 progresses.forEach((progress) => {
   appearProgressbarOnScroll.observe(progress);
 });
+
+//Send Email Function

@@ -46,7 +46,7 @@
                 <h1>I am <span style="color: #EE7447;">Parisa</span></h1>
                 <h1>& also a Web Developer</h1>
             </div>
-            <button class="btn-hire-me liquidbg">Hire me</button>
+            <button class="btn-hire-me liquidbg" onclick="location.href='#contact-me'">Hire me</button>
             <div>
                 <img class="arrow-icon" src="/images/header-arrow.png" alt="arrow icon">
             </div>
@@ -199,11 +199,11 @@
         <div class="row">
             <div class="col-lg-6 contact-left-section">
                 <h2>Contact Me</h2>
-                <form class="form-body" action="/" method="post">
-                    <input class="form-control form-input" type="text" name="inputName" placeholder="Name">
-                    <input class="form-control form-input" type="email" name="inputEmail" placeholder="Email">
-                    <textarea cols="70" rows="10" name="messege" placeholder="write your messege.."></textarea>
-                    <button class="send-btn liquidbg">Send</button>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input class="form-control form-input" type="text" id="name" placeholder="Name" required>
+                    <input class="form-control form-input" type="email" id="email" placeholder="Email" required>
+                    <textarea rows="10" name="messege" placeholder="write your messege.."></textarea>
+                    <button type="submit" class="send-btn liquidbg">Send</button>
                 </form>
             </div>
             <div class="col-lg-6">
@@ -221,6 +221,20 @@
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "86be9ef4-d511-4448-94a8-87f40047713f",
+                To: "parisa7422@gmail.com",
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "And this is the body",
+            }).then((message) => alert(message));
+        }
     </script>
     <!--JavaScript-->
     <script src="/javaScript/index.js"></script>
