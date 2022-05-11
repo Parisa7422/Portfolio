@@ -199,10 +199,10 @@
         <div class="row">
             <div class="col-lg-6 contact-left-section">
                 <h2>Contact Me</h2>
-                <form onsubmit="sendEmail(); reset(); return false;">
-                    <input class="form-control form-input" type="text" id="name" placeholder="Name" required>
-                    <input class="form-control form-input" type="email" id="email" placeholder="Email" required>
-                    <textarea rows="10" name="messege" placeholder="write your messege.."></textarea>
+                <form onsubmit="SendMail(); reset(); return false;">
+                    <input class="form-control form-input" type="text" id="fullName" placeholder="Full Name" required>
+                    <input class="form-control form-input" type="email" id="email_id" placeholder="Email" required>
+                    <textarea rows="10" name="message" id="message" placeholder="write your message.."></textarea>
                     <button type="submit" class="send-btn liquidbg">Send</button>
                 </form>
             </div>
@@ -223,17 +223,28 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 
-    <!-- SMTP JS -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Email Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("EWZMlIpeGvWJ7XhBy");
+        })();
+    </script>
     <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "86be9ef4-d511-4448-94a8-87f40047713f",
-                To: "parisa7422@gmail.com",
-                From: document.getElementById("email").value,
-                Subject: "This is the subject",
-                Body: "And this is the body",
-            }).then((message) => alert(message));
+        function SendMail() {
+            var params = {
+                from_name: document.getElementById("fullName").value,
+                email_id: document.getElementById("email_id").value,
+                message: document.getElementById("message").value
+            };
+
+            emailjs.send('service_5c79r6l', 'template_qf9jlok', params)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
         }
     </script>
     <!--JavaScript-->
