@@ -11,22 +11,22 @@ menuIcon.addEventListener("click", function () {
 });
 
 // Initialize and add the map
-// function initMap() {
-//   // The location of Uluru
-//   const uluru = { lat: 40.008, lng: 28.641 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 4,
-//     center: uluru,
-//   });
-//   // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// }
+function initMap() {
+  // The location of Uluru
+  const istanbul = { lat: 41.006, lng: 28.657 };
+  // The map, centered at Istanbul
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: istanbul,
+  });
+  // The marker, positioned at Istanbul
+  const marker = new google.maps.Marker({
+    position: istanbul,
+    map: map,
+  });
+}
 
-// window.initMap = initMap;
+window.initMap = initMap;
 
 //Intersection Observer
 //Titles loaded on scroll

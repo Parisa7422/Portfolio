@@ -389,6 +389,10 @@ textarea:focus~label {
     height: 100%;
 }
 
+.map {
+    z-index: 1;
+}
+
 /* Progress bar */
 
 
