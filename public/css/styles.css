@@ -192,7 +192,7 @@ p {
 .send-btn:hover {
     background-position: 80% 50%;
     border-color: #EE7447;
-    color: #06113C;
+    color: #E2DDD7;
 }
 
 .liquidbg {
@@ -283,10 +283,6 @@ input {
     color: #06113C;
 }
 
-::placeholder {
-    color: #EE7447;
-}
-
 .contact-bg {
     position: absolute;
     right: 0;
@@ -345,6 +341,7 @@ textarea {
 
 }
 
+
 textarea:focus {
     outline: none;
     background-color: #E2DDD7;
@@ -353,18 +350,23 @@ textarea:focus {
 }
 
 .form-input:focus~label,
-.form-input:valid~label,
-textarea:focus~label,
-textarea:valid~label {
+.form-input:valid~label {
     transform: translateY(-50%) scale(0.9);
     background-color: #E2DDD7;
     padding: 0 .2em;
     color: #06113C;
 }
 
+textarea:focus~label {
+    transform: translateY(-50%) scale(0.9);
+    background-color: #E2DDD7;
+    padding: 0 .2em;
+    color: #06113C;
+}
 
 .send-btn {
-    font-family: 'Sriracha', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     width: 163px;
     height: 50px;
     margin-top: 5px;
