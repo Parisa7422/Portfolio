@@ -46,7 +46,7 @@
                 <h1>I am <span style="color: #EE7447;">Parisa</span></h1>
                 <h1>& also a Web Developer</h1>
             </div>
-            <button class="btn-hire-me liquidbg">Hire me</button>
+            <button class="btn-hire-me liquidbg" onclick="location.href='#contact-me'">Hire me</button>
             <div>
                 <img class="arrow-icon" src="/images/header-arrow.png" alt="arrow icon">
             </div>
@@ -191,29 +191,35 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <img class="skill-bg" src="/images/skill-bg.png" alt="background icon">
-            </div>
+
     </section>
     <section id="contact-me">
         <div class="row">
             <div class="col-lg-6 contact-left-section">
                 <h2>Contact Me</h2>
-                <form class="form-body" action="/" method="post">
-                    <input class="form-control form-input" type="text" name="inputName" placeholder="Name">
-                    <input class="form-control form-input" type="email" name="inputEmail" placeholder="Email">
-                    <textarea cols="70" rows="10" name="messege" placeholder="write your messege.."></textarea>
-                    <button class="send-btn liquidbg">Send</button>
+                <form onsubmit="SendMail(); reset(); return false;">
+                    <div class="input-group">
+                        <input class="form-input" type="text" id="fullName" autocomplete="off" required>
+                        <label class="user-label">Full name</label>
+                    </div>
+                    <div class="input-group">
+                        <input class="form-input" type="email" id="email_id" required>
+                        <label class="user-label">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="10" name="message" id="message"></textarea>
+                        <label class="user-label">Message</label>
+                    </div>
+
+                    <button type="submit" class="send-btn liquidbg">Send</button>
                 </form>
             </div>
             <div class="col-lg-6">
-                <!-- <div id="map"></div> -->
+                <div id="map"></div>
 
             </div>
         </div>
-        <div>
-            <img class="contact-bg" src="/images/contact-bg.png" alt="background icon">
-        </div>
+
     </section>
 
 
@@ -224,10 +230,19 @@
     </script>
     <!--JavaScript-->
     <script src="/javaScript/index.js"></script>
+    <!-- Email Js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("EWZMlIpeGvWJ7XhBy");
+        })();
+    </script>
+
     <!-- Map API -->
-    <!-- <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-        defer></script> -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-I0czLh77dVCdkmj0tksaSCkKcjvpKQs&callback=initMap">
+    </script>
 </body>
 
 </html>
