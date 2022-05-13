@@ -1,3 +1,14 @@
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-accent: 'Saira Stencil One', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,7 +18,7 @@ body {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     color: #06113C;
     letter-spacing: 2px;
     font-family: 'Sriracha', cursive;
@@ -58,130 +69,83 @@ p {
     /* don't forget to set a duration! */
 }
 
-.container {
-    padding: 0;
-
+main {
+    width: 80%;
+    margin: auto;
 }
 
-/*************** NavBar *****************/
-
-.navbar {
-    width: 250px;
-    height: 100%;
-    background-color: #2A2550;
-    position: fixed;
-    top: 0;
-    left: -250px;
+/*************** HEADER *****************/
+header {
     display: flex;
-    justify-content: center;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
     align-items: center;
-    border-radius: 0 50% 50% 0;
-    z-index: 1;
+
 }
 
-.change {
-    left: 0;
-    transition: all 0.5s;
-}
-
-.nav-item {
-    list-style: none;
-    margin: 25px;
-}
-
-.nav-item :hover {
-    font-size: 23;
-    color: #fff;
-    letter-spacing: 3px;
-    transition: all 0.3s ease;
-}
-
-
-
-.nav-item a {
-    text-decoration: none;
-    font-size: 22px;
-    color: #E04D01;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-
-.hamburger-menu {
-    width: 48px;
-    height: 40px;
-    position: fixed;
-    cursor: pointer;
-    left: 100px;
-    top: 66px;
+.nav-links,
+.logo-container {
     display: flex;
-    flex-direction: column;
+}
+
+.logo-container {
+    flex: 1;
+    align-items: center;
+
+}
+
+.logo {
+    font-weight: 500;
+    margin: 5px;
+}
+
+.nav-links {
     justify-content: space-around;
+    list-style: none;
+    margin: auto;
+}
+
+.nav-link {
+    color: #E04D01;
+    font-family: var(--ff-primary);
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
 
 }
 
-.line {
-    width: 100%;
-    height: 5px;
-    border-radius: 30px;
-    background-color: #EE7447;
-    margin: 3px 0px;
-    transition: all 0.8s;
+/***************** INTRODUCE *****************/
+
+.introduce {
+    padding-top: 3%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    min-height: 80vh;
 }
 
-.change .line-1 {
-    transform: rotateZ(-45deg) translate(-15px, 4px);
-
+.intro-text {
+    flex: 1;
 }
 
-.change .line-2 {
-    opacity: 0;
+.parisa {
+    color: #EE7447;
 }
 
-.change .line-3 {
-    transform: rotateZ(45deg) translate(-15px, -4px);
-}
-
-/***************** Header *****************/
-
-.title {
-    margin-top: 200px;
-}
-
-.arrow-icon {
-    position: absolute;
-    left: 398px;
-    top: 183px;
-}
-
-.header-img {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.profile-img {
-    position: absolute;
-    top: 38px;
-    right: 100px;
-    z-index: -1;
+.cta {
+    margin: 3% 0 0 0;
 }
 
 .btn-hire-me {
-    width: 247px;
+    width: 200px;
     height: 70px;
-    position: absolute;
-    right: 728px;
-    margin: 10px 0;
     border-radius: 19px;
     border: 3pt solid #EE7447;
     background-color: #E2DDD7;
     color: #EE7447;
-    font-size: 2.5em;
+    font-size: 2.2em;
     text-align: center;
-    line-height: 70px;
-    padding: 0;
     font-family: 'Sriracha', cursive;
     background-position: 0 -100%;
     background-repeat: repeat-x;
@@ -199,78 +163,56 @@ p {
     background-image: url(../images/btn-bg.png);
 }
 
-/****************** About Me *************/
-#about-me {
-    position: relative;
-    margin-top: 275px;
-    padding: 7%;
-    height: 100vh;
+/******************ABOUT SECTION*************/
+.about-me {
+    display: flex;
+    padding-top: 10%;
 }
 
-.about-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
+.about-text {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
-.second-title-about {
-    position: absolute;
-    top: 586px;
+.first-section {
+    flex: 1;
 }
 
-.about-arrow {
-    position: absolute;
-    right: 170px;
-    top: 630px;
+
+/************* SKILLS SECTION ****************/
+.skills {
+    display: flex;
+    padding-top: 10%;
 }
 
-/************* Skills Section ****************/
-#skills {
-    position: relative;
-    height: 100vh;
-    margin-top: 100px;
-    padding: 7% 7%;
-}
-
-.skill-description {
+.skill-text {
     padding-right: 15%;
+    flex: 1;
 }
 
-.developer-skill {
-
-    margin-top: 5%
-}
-
-.skill-padding {
-
-    padding-right: 7%;
-    position: relative;
+.design-skills h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
 
 }
 
-.title-shape {
-    height: 18px;
-    width: 290px;
-    border-radius: 9px;
-    background-color: #EE7447;
-    position: absolute;
-    top: 62px;
-    left: 15px;
-    z-index: -1;
+.skill-items {
+    flex: 3;
+    flex-direction: column;
 }
 
-
-
-.item-margin {
-    height: 40px;
+.skill-item {
+    display: flex;
+    height: 8vh;
+    margin: auto;
+    align-items: center;
 }
 
-.skill-bg {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.skill-item h6 {
+    align-items: flex-start;
 }
-
 
 /***************** Contact me *****************/
 #contact-me {
@@ -389,9 +331,7 @@ textarea:focus~label {
     height: 100%;
 }
 
-.map {
-    z-index: 1;
-}
+
 
 /* Progress bar */
 
@@ -400,8 +340,6 @@ textarea:focus~label {
     height: 19px;
     width: 300px;
     border: 0.5px solid #fff;
-    margin: auto;
-    padding: 0;
     border-radius: 9px;
     background-color: #251D3A;
 

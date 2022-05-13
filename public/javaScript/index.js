@@ -6,9 +6,9 @@ const progress = document.querySelectorAll(".progress");
 const email = document.getElementById("email_id");
 
 //Navbar
-menuIcon.addEventListener("click", function () {
-  navbar.classList.toggle("change");
-});
+// menuIcon.addEventListener("click", function () {
+//   navbar.classList.toggle("change");
+// });
 
 // Initialize and add the map
 function initMap() {

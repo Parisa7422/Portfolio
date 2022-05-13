@@ -23,204 +23,159 @@
 
 
 <body>
-    <!-- NavBar -->
-    <nav class="navbar">
-        <div class="hamburger-menu">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
+
+    <header>
+        <div class="logo-container">
+            <img src="/images/logo.png" alt="logo">
+            <h4 class="logo">PT</h4>
         </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#header">Home</a></li>
+                <li><a class="nav-link" href="#about-me">About me</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <ul class="nav-link">
-            <li class="nav-item"><a href="#header">Home</a></li>
-            <li class="nav-item"><a href="#about-me">About me</a></li>
-            <li class="nav-item"><a href="#skills">Skills & Experiment</a></li>
-            <li class="nav-item"><a href="#contact-me">Contact Me</a></li>
-        </ul>
-    </nav>
-
-    <section id="header">
-        <div class="container">
-            <div class=" title">
+    <main>
+        <section class="introduce">
+            <div class="intro-text">
                 <h1>Hi</h1>
-                <h1>I am <span style="color: #EE7447;">Parisa</span></h1>
+                <h1>I am <span class="parisa">Parisa</span></h1>
                 <h1>& also a Web Developer</h1>
-            </div>
-            <button class="btn-hire-me liquidbg" onclick="location.href='#contact-me'">Hire me</button>
-            <div>
-                <img class="arrow-icon" src="/images/header-arrow.png" alt="arrow icon">
-            </div>
-            <div>
-                <img class="header-img" src="/images/header-bg.png" alt="background image">
-            </div>
-            <div>
-                <img class="profile-img" src="/images/header-img.png" alt="Profile-img">
+                <div class="cta">
+                    <button class="btn-hire-me liquidbg" onclick="location.href='#contact-me'">Hire me</button>
+                </div>
             </div>
 
-        </div>
-    </section>
-
-    <section id="about-me">
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="about-bg" src="/images/about-bg.png" alt="it's a picture of me">
+            <div class="intro-img">
+                <img src="/images/header-img.png" alt="profile image">
             </div>
-            <div class="col-lg-6">
-                <h2>Who I am?</h2>
-                <p>April 11, 1995 Iran-Tehran <br>
-                    I graduated from the Software Enginiering in 2010 but I worked as a Graphic Designer in a company
-                    for 3 years.<br>
-                    It kept me away from the world of Programming unfurtunatly But it did give me a fairly good design
-                    experience.
-                </p>
-                <h2 class="second-title-about">What can I do?</h2>
-                <img class="about-arrow" src="/images/about-arrow.png" alt="arrow icon">
-            </div>
-            <div>
+        </section>
 
+        <section class="about-me">
+            <div class="intro-img">
+                <img class="about-bg" src="/images/header-img.png" alt="profile picture">
             </div>
-        </div>
-    </section>
+            <div class="about-text">
+                <div class="first-section">
+                    <h2>Who I am?</h2>
+                    <p>April 11, 1995 Iran-Tehran <br>
+                        I graduated from the Software Enginiering in 2010 but I worked as a Graphic Designer in a
+                        company
+                        for 3 years.<br>
+                        It kept me away from the world of Programming unfurtunatly But it did give me a fairly good
+                        design
+                        experience.
+                    </p>
+                </div>
+                <div class="second-section">
+                    <h2>What can I do?</h2>
+                </div>
+        </section>
 
-    <section id="skills">
-        <div class="row">
-            <div class="col-lg-6 skill-padding">
+        <section class="skills">
+            <div class="skill-text">
                 <h2>Skills & Experiences</h2>
-                <div class="title-shape"></div>
-                <p class="skill-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                <p class="skill-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy
                     nibh euismod
                     tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                     nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                     Duis autem vel </p>
             </div>
-            <div class="col-lg-6">
-                <div class="designer-skill">
-                    <h3>AS A DESIGNER</h3>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>Adobe Photoshop</p>
-                        </div>
-                        <div class="progress col-lg-6">
+            <div class="skill-items">
+                <div class="design-skills">
+                    <h3>As a designer</h3>
+                    <div class="skill-item">
+                        <h6>Adobe Photoshop</h6>
+                        <div class="progress">
                             <div class="progress-done" data-done="80">80%</div>
                         </div>
-
                     </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>Adobe Illustrator</p>
-                        </div>
-                        <div class="progress col-lg-6">
+                    <div class="skill-item">
+                        <h6>Adobe Illustrator</h6>
+                        <div class="progress">
                             <div class="progress-done" data-done="70">70%</div>
                         </div>
-
                     </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>Adobe After effect</p>
-                        </div>
-                        <div class="progress col-lg-6">
+                    <div class="skill-item">
+                        <h6>Adobe After effect</h6>
+                        <div class="progress">
                             <div class="progress-done" data-done="70">70%</div>
                         </div>
-
                     </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>Adobe Premiere</p>
-                        </div>
-                        <div class="progress col-lg-6">
+                    <div class="skill-item">
+                        <h6>Adobe Premiere</h6>
+                        <div class="progress">
                             <div class="progress-done" data-done="50">50%</div>
                         </div>
-
                     </div>
-                </div>
-                <div class="developer-skill">
-                    <h3>AS A DEVELOPER</h3>
+                    <div class="develop-skills">
+                        <h3>AS A DEVELOPER</h3>
+                        <div class="skill-item">
+                            <h6>HTML 5</h6>
 
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>HTML 5</p>
+                            <div class="progress">
+                                <div class="progress-done" data-done="85">85%</div>
+                            </div>
                         </div>
-                        <div class="progress col-lg-6">
-                            <div class="progress-done" data-done="85">85%</div>
+                        <div class="skill-item">
+                            <h6>CSS</h6>
+                            <div class="progress">
+                                <div class="progress-done" data-done="65">65%</div>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>CSS</p>
+                        <div class="skill-item">
+                            <h6>JavaScript</h6>
+                            <div class="progress">
+                                <div class="progress-done" data-done="60">60%</div>
+                            </div>
                         </div>
-                        <div class="progress col-lg-6">
-                            <div class="progress-done" data-done="65">65%</div>
-                        </div>
-
-                    </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="progress col-lg-6">
-                            <div class="progress-done" data-done="60">60%</div>
-                        </div>
-
-                    </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>jQuery</p>
-                        </div>
-                        <div class="progress col-lg-6">
-                            <div class="progress-done" data-done="50">50%</div>
-                        </div>
-
-                    </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>Bootstrap</p>
-                        </div>
-                        <div class="progress col-lg-6">
-                            <div class="progress-done" data-done="75">75%</div>
-                        </div>
-
-                    </div>
-                    <div class="row item-margin">
-                        <div class="col-lg-6">
-                            <p>Git</p>
-                        </div>
-                        <div class="progress col-lg-6">
-                            <div class="progress-done" data-done="55">55%</div>
+                        <div class="skill-item">
+                            <h6>Git</h6>
+                            <div class="progress">
+                                <div class="progress-done" data-done="55">55%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+        </section>
+
+
+
+
+        <section id="contact-me">
+            <div class="row">
+                <div class="col-lg-6 contact-left-section">
+                    <h2>Contact Me</h2>
+                    <form onsubmit="SendMail(); reset(); return false;">
+                        <div class="input-group">
+                            <input class="form-input" type="text" id="fullName" autocomplete="off" required>
+                            <label class="user-label">Full name</label>
+                        </div>
+                        <div class="input-group">
+                            <input class="form-input" type="email" id="email_id" required>
+                            <label class="user-label">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea rows="10" name="message" id="message"></textarea>
+                            <label class="user-label">Message</label>
+                        </div>
+
+                        <button type="submit" class="send-btn liquidbg">Send</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div id="map"></div>
+
+                </div>
             </div>
 
-    </section>
-    <section id="contact-me">
-        <div class="row">
-            <div class="col-lg-6 contact-left-section">
-                <h2>Contact Me</h2>
-                <form onsubmit="SendMail(); reset(); return false;">
-                    <div class="input-group">
-                        <input class="form-input" type="text" id="fullName" autocomplete="off" required>
-                        <label class="user-label">Full name</label>
-                    </div>
-                    <div class="input-group">
-                        <input class="form-input" type="email" id="email_id" required>
-                        <label class="user-label">Email</label>
-                    </div>
-                    <div class="input-group">
-                        <textarea rows="10" name="message" id="message"></textarea>
-                        <label class="user-label">Message</label>
-                    </div>
-
-                    <button type="submit" class="send-btn liquidbg">Send</button>
-                </form>
-            </div>
-            <div class="col-lg-6">
-                <div id="map"></div>
-
-            </div>
-        </div>
-
-    </section>
+        </section>
+    </main>
 
 
 
