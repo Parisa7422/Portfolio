@@ -221,10 +221,10 @@ header {
 }
 
 /***************** Contact me *****************/
-#contact-me {
-    position: relative;
-    padding: 7%;
-
+.contact-me {
+    padding-top: 15%;
+    padding-bottom: 7%;
+    display: flex;
 }
 
 input {
