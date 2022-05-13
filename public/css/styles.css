@@ -54,11 +54,6 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-#skills h2,
-#contact-me h2 {
-    color: #06113C;
-}
-
 
 .title-animation {
     opacity: 1;
@@ -183,15 +178,24 @@ header {
 /************* SKILLS SECTION ****************/
 .skills {
     display: flex;
-    padding-top: 10%;
+    padding-top: 12%;
+}
+
+.skills h2 {
+    color: #06113C;
+    padding-right: 15%;
 }
 
 .skill-text {
-    padding-right: 15%;
     flex: 1;
 }
 
-.design-skills h3 {
+.skill-description {
+    padding-right: 15%;
+}
+
+.design-skills h3,
+.develop-skills h3 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5em;
@@ -199,8 +203,9 @@ header {
 }
 
 .skill-items {
-    flex: 3;
+    flex: 1;
     flex-direction: column;
+
 }
 
 .skill-item {
@@ -208,10 +213,11 @@ header {
     height: 8vh;
     margin: auto;
     align-items: center;
+    justify-content: space-between;
 }
 
 .skill-item h6 {
-    align-items: flex-start;
+    margin: auto 0;
 }
 
 /***************** Contact me *****************/
