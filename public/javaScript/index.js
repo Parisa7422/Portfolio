@@ -1,14 +1,20 @@
-const menuIcon = document.querySelector(".hamburger-menu");
-const navbar = document.querySelector(".navbar");
 const progresses = document.querySelectorAll(".progress-done");
 const titles = document.querySelectorAll("h2");
 const progress = document.querySelectorAll(".progress");
 const email = document.getElementById("email_id");
 
-//Navbar
-// menuIcon.addEventListener("click", function () {
-//   navbar.classList.toggle("change");
-// });
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-link");
+
+//Hamburger menu
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("rotation");
+  navLinks.classList.toggle("open");
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+});
 
 // Initialize and add the map
 function initMap() {
