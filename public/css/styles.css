@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: #E2DDD7;
+    background-color: #EAE5E1;
 }
 
 h1 {
@@ -97,8 +97,15 @@ nav {
 }
 
 /***************** INTRODUCE *****************/
+.intro-bg {
+    background: linear-gradient(to top, #D6D2CE, #EAE5E1);
+    width: 100%;
+}
 
 .introduce {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
     padding-top: 3%;
     display: flex;
     margin: auto;
