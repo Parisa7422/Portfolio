@@ -190,7 +190,7 @@ nav {
 .design-skills h3,
 .develop-skills h3 {
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     font-size: 1.5em;
 
 }
@@ -201,16 +201,54 @@ nav {
 
 }
 
+
+.skill-title {
+    background-color: #EAE5E1;
+    position: absolute;
+    padding: 0 3%;
+    border-radius: 0.5rem;
+    top: 5%;
+    left: 5%;
+}
+
 .skill-item {
     display: flex;
     height: 8vh;
     margin: auto;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-.skill-item h6 {
-    margin: auto 0;
+
+
+/* Progress bar */
+
+
+.progress {
+    height: 20px;
+    width: 500px;
+    border: 0.8px solid #251D3A;
+    border-radius: 9px;
+    background-color: #EAE5E1;
+
+}
+
+.progress-done {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 9px;
+    height: 100%;
+    background: linear-gradient(to left, #E04D01, #FF7700);
+    box-shadow: 0 3px -5px #E04D01, 0 2px 5px #E04D01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease;
 }
 
 /***************** Contact me *****************/
@@ -328,37 +366,6 @@ textarea:focus~label {
 
 #map {
     height: 100%;
-}
-
-
-
-/* Progress bar */
-
-
-.progress {
-    height: 19px;
-    width: 300px;
-    border: 0.5px solid #fff;
-    border-radius: 9px;
-    background-color: #251D3A;
-
-}
-
-.progress-done {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    border-radius: 9px;
-    height: 100%;
-    background: linear-gradient(to left, #E04D01, #FF7700);
-    box-shadow: 0 3px -5px #E04D01, 0 2px 5px #E04D01;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1rem;
-    width: 0;
-    opacity: 0;
-    transition: 1s ease;
 }
 
 
@@ -494,5 +501,27 @@ textarea:focus~label {
 
     .skill-description {
         padding: 0;
+    }
+
+    .skill-items {
+        margin-left: auto;
+        position: relative;
+        padding-top: 10%;
+
+    }
+
+    .skill-items h3 {
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        height: fit-content;
+        position: absolute;
+        left: -20%;
+        font-size: 1.2em;
+        text-transform: uppercase;
+
+    }
+
+    .progress {
+        width: 300px;
     }
 }
