@@ -366,10 +366,9 @@ textarea:focus~label {
 
 @media screen and (max-width: 900px) {
 
-    .introduce,
-    .about-me,
-    .skills,
-    .contact-me {
+
+    .contact-me,
+    .about-me .intro-img {
         display: none;
     }
 
@@ -385,18 +384,19 @@ textarea:focus~label {
     .hamburger {
         z-index: 2;
         position: absolute;
-        right: 5%;
+        right: 3%;
         top: 50%;
-        transform: translate(-5%, -50%);
+        transform: translate(-3%, -50%);
         cursor: pointer;
 
 
     }
 
     nav {
+        position: fixed;
         width: 100%;
         height: 10vh;
-        position: relative;
+
     }
 
     .nav-links {
@@ -449,5 +449,50 @@ textarea:focus~label {
 
     }
 
+    main {
+        width: 75%;
+    }
 
+    /* INTRODUCE */
+    .introduce {
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .intro-text {
+        margin-right: auto;
+    }
+
+
+
+    .intro-text h1 {
+        font-size: 2.3em;
+
+    }
+
+    .intro-img img {
+        width: 100%;
+    }
+
+    /* ABOUT SECTION */
+    .about-text {
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    /* SKILLS SECTION */
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills h2 {
+        display: none;
+    }
+
+    .skill-description {
+        padding: 0;
+    }
 }
