@@ -1,6 +1,7 @@
 :root {
     --ff-primary: 'Montserrat', sans-serif;
     --ff-accent: 'Saira Stencil One', cursive;
+    --clr-primary-200: #EAE5E1;
 }
 
 * {
@@ -14,7 +15,7 @@ html {
 }
 
 body {
-    background-color: #EAE5E1;
+    background-color: var(--clr-primary-200);
 }
 
 h1 {
@@ -98,7 +99,7 @@ nav {
 
 /***************** INTRODUCE *****************/
 .intro-bg {
-    background: linear-gradient(to top, #D6D2CE, #EAE5E1);
+    background: linear-gradient(to top, #D6D2CE, var(--clr-primary-200));
     width: 100%;
 }
 
@@ -130,7 +131,7 @@ nav {
     height: 70px;
     border-radius: 19px;
     border: 3pt solid #EE7447;
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     color: #EE7447;
     font-size: 2.2em;
     text-align: center;
@@ -144,7 +145,7 @@ nav {
 .send-btn:hover {
     background-position: 80% 50%;
     border-color: #EE7447;
-    color: #E2DDD7;
+    color: var(--clr-primary-200);
 }
 
 .liquidbg {
@@ -180,7 +181,7 @@ nav {
 }
 
 .skill-text {
-    flex: 1;
+    flex: 2;
 }
 
 .skill-description {
@@ -198,17 +199,17 @@ nav {
 .skill-items {
     flex: 1;
     flex-direction: column;
-
 }
 
 
 .skill-title {
-    background-color: #EAE5E1;
+    background-color: var(--clr-primary-200);
     position: absolute;
     padding: 0 3%;
     border-radius: 0.5rem;
     top: 5%;
     left: 5%;
+    z-index: 2;
 }
 
 .skill-item {
@@ -230,7 +231,7 @@ nav {
     width: 500px;
     border: 0.8px solid #251D3A;
     border-radius: 9px;
-    background-color: #EAE5E1;
+    background-color: var(--clr-primary-200);
 
 }
 
@@ -262,12 +263,6 @@ input {
     color: #06113C;
 }
 
-.contact-bg {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 .contact-left-section {
     padding-right: 90px;
 }
@@ -292,7 +287,7 @@ input {
     height: 50px;
     margin: 2% 0;
     width: 100%;
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     color: #06113C;
     border-radius: 8px;
     border: #EE7447 solid 2pt;
@@ -301,7 +296,7 @@ input {
 
 .form-input:focus {
     outline: none;
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     border: #06113C solid 2pt;
     box-shadow: none;
 
@@ -313,7 +308,7 @@ textarea {
     width: 100%;
     border-style: none;
     border-radius: 8px;
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     color: #06113C;
     border: #EE7447 solid 2pt;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -323,7 +318,7 @@ textarea {
 
 textarea:focus {
     outline: none;
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     border: #06113C solid 2pt;
     box-shadow: none;
 }
@@ -331,14 +326,14 @@ textarea:focus {
 .form-input:focus~label,
 .form-input:valid~label {
     transform: translateY(-50%) scale(0.9);
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     padding: 0 .2em;
     color: #06113C;
 }
 
 textarea:focus~label {
     transform: translateY(-50%) scale(0.9);
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     padding: 0 .2em;
     color: #06113C;
 }
@@ -356,7 +351,7 @@ textarea:focus~label {
     padding: 0;
     border-radius: 8px;
     border: 2pt solid #EE7447;
-    background-color: #E2DDD7;
+    background-color: var(--clr-primary-200);
     color: #EE7447;
     background-position: 0 -100%;
     background-repeat: repeat-x;
@@ -373,8 +368,6 @@ textarea:focus~label {
 
 @media screen and (max-width: 900px) {
 
-
-    .contact-me,
     .about-me .intro-img {
         display: none;
     }
@@ -428,7 +421,7 @@ textarea:focus~label {
 
 
     .nav-link {
-        color: #E2DDD7;
+        color: var(--clr-primary-200);
         font-size: 1.2em;
         letter-spacing: 2px;
         opacity: 0;
@@ -482,8 +475,18 @@ textarea:focus~label {
     }
 
     /* ABOUT SECTION */
+
+
     .about-text {
-        padding: 0;
+        padding: 10% 0;
+    }
+
+    .first-section p {
+        padding: 10% 0;
+    }
+
+    .second-section {
+        margin: 20% 0 0;
     }
 
     h2 {
@@ -503,25 +506,47 @@ textarea:focus~label {
         padding: 0;
     }
 
+
+
     .skill-items {
         margin-left: auto;
-        position: relative;
-        padding-top: 10%;
+        padding-top: 15%;
+        width: 100%;
 
     }
 
-    .skill-items h3 {
+    .title {
         writing-mode: vertical-rl;
         text-orientation: sideways;
-        height: fit-content;
-        position: absolute;
-        left: -20%;
-        font-size: 1.2em;
+        font-size: 0.8em;
         text-transform: uppercase;
-
+        text-align: left;
+        margin: auto 0;
     }
+
+    .progress-section {
+        margin-left: auto;
+    }
+
+    .design-skills,
+    .develop-skills {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10%;
+    }
+
+
 
     .progress {
         width: 300px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-form {
+        width: 100%;
+    }
+
+    .send-btn {
+        width: 100%;
     }
 }
