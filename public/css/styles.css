@@ -94,6 +94,13 @@ nav {
     font-family: var(--ff-primary);
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.nav-link:hover {
+    color: #06113C;
+    letter-spacing: 2px;
 
 }
 
