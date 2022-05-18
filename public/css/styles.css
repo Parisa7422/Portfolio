@@ -271,14 +271,18 @@ nav {
     display: flex;
 }
 
+.contact-form {
+    margin: auto;
+    width: 60%;
+}
+
+.contact-form h2 {
+    margin: 5% 0;
+}
+
 input {
     color: #06113C;
 }
-
-.contact-left-section {
-    padding-right: 90px;
-}
-
 
 .input-group {
     position: relative;
