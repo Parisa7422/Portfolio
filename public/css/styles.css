@@ -72,9 +72,13 @@ main {
 
 /*************** HEADER *****************/
 nav {
+    position: fixed;
+    background-color: var(--clr-primary-200);
     height: 10vh;
-    width: 80%;
+    width: 100%;
+    padding: 0 5%;
     margin: auto;
+    z-index: 2;
 }
 
 .nav-links {
@@ -94,6 +98,13 @@ nav {
     font-family: var(--ff-primary);
     text-decoration: none;
     text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.nav-link:hover {
+    color: #06113C;
+    letter-spacing: 2px;
 
 }
 
@@ -101,12 +112,12 @@ nav {
 .intro-bg {
     background: linear-gradient(to top, #D6D2CE, var(--clr-primary-200));
     width: 100%;
+    height: 100vh;
 }
 
-.introduce {
+#introduce {
     width: 80%;
-    height: 100vh;
-    margin: auto;
+    height: 100%;
     padding-top: 3%;
     display: flex;
     margin: auto;
@@ -153,7 +164,7 @@ nav {
 }
 
 /******************ABOUT SECTION*************/
-.about-me {
+#about-me {
     display: flex;
     padding-top: 10%;
 }
@@ -170,18 +181,22 @@ nav {
 
 
 /************* SKILLS SECTION ****************/
-.skills {
+#skills {
     display: flex;
     padding-top: 12%;
 }
 
-.skills h2 {
+#skills h2 {
     color: #06113C;
     padding-right: 15%;
 }
 
 .skill-text {
-    flex: 2;
+    width: 65%;
+}
+
+.progress-section {
+    width: 80%;
 }
 
 .skill-description {
@@ -197,7 +212,7 @@ nav {
 }
 
 .skill-items {
-    flex: 1;
+    width: 35%;
     flex-direction: column;
 }
 
@@ -207,15 +222,17 @@ nav {
     position: absolute;
     padding: 0 3%;
     border-radius: 0.5rem;
-    top: 5%;
+    top: -70%;
     left: 5%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .skill-item {
     display: flex;
-    height: 8vh;
-    margin: auto;
+    height: fit-content;
+    width: 100%;
+    min-width: 150px;
+    margin: 8% 0;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -228,7 +245,7 @@ nav {
 
 .progress {
     height: 20px;
-    width: 500px;
+    width: 100%;
     border: 0.8px solid #251D3A;
     border-radius: 9px;
     background-color: var(--clr-primary-200);
@@ -253,20 +270,24 @@ nav {
 }
 
 /***************** Contact me *****************/
-.contact-me {
+#contact-me {
     padding-top: 15%;
     padding-bottom: 7%;
     display: flex;
 }
 
+.contact-form {
+    margin: auto;
+    width: 60%;
+}
+
+.contact-form h2 {
+    margin: 5% 0;
+}
+
 input {
     color: #06113C;
 }
-
-.contact-left-section {
-    padding-right: 90px;
-}
-
 
 .input-group {
     position: relative;
@@ -368,7 +389,7 @@ textarea:focus~label {
 
 @media screen and (max-width: 900px) {
 
-    .about-me .intro-img {
+    #about-me .intro-img {
         display: none;
     }
 
@@ -454,7 +475,7 @@ textarea:focus~label {
     }
 
     /* INTRODUCE */
-    .introduce {
+    #introduce {
         flex-direction: column;
         padding-top: 10%;
     }
@@ -494,11 +515,11 @@ textarea:focus~label {
     }
 
     /* SKILLS SECTION */
-    .skills {
+    #skills {
         flex-direction: column;
     }
 
-    .skills h2 {
+    #skills h2 {
         display: none;
     }
 
@@ -506,13 +527,14 @@ textarea:focus~label {
         padding: 0;
     }
 
-
+    .skill-text {
+        width: 100%;
+    }
 
     .skill-items {
         margin-left: auto;
         padding-top: 15%;
         width: 100%;
-
     }
 
     .title {
@@ -535,11 +557,10 @@ textarea:focus~label {
         padding-bottom: 10%;
     }
 
-
-
-    .progress {
-        width: 300px;
-    }
+    /* .progress {
+        width: 100%;
+        min-width: 230px;
+    } */
 
     /* CONTACT SECTION */
     .contact-form {
