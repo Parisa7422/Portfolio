@@ -195,6 +195,10 @@ nav {
     width: 65%;
 }
 
+.progress-section {
+    width: 80%;
+}
+
 .skill-description {
     padding-right: 15%;
 }
@@ -226,6 +230,8 @@ nav {
 .skill-item {
     display: flex;
     height: fit-content;
+    width: 100%;
+    min-width: 150px;
     margin: 8% 0;
     align-items: center;
     justify-content: space-between;
@@ -240,7 +246,6 @@ nav {
 .progress {
     height: 20px;
     width: 100%;
-    min-width: 230px;
     border: 0.8px solid #251D3A;
     border-radius: 9px;
     background-color: var(--clr-primary-200);
