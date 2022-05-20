@@ -19,6 +19,8 @@
         rel="stylesheet">
     <!-- Animate.css     -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/6514d1af83.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -32,7 +34,7 @@
                 <div class="line line-3"></div>
             </div>
             <ul class="nav-links">
-                <li><a class="nav-link" href="#header">Home</a></li>
+                <li><a class="nav-link" href="#introduce">Home</a></li>
                 <li><a class="nav-link" href="#about-me">About me</a></li>
                 <li><a class="nav-link" href="#skills">Skills</a></li>
                 <li><a class="nav-link" href="#contact-me">Contact Me</a></li>
@@ -41,7 +43,7 @@
     </header>
 
     <div class="intro-bg">
-        <section class="introduce">
+        <section id="introduce">
             <div class="intro-text">
                 <h1>Hi, I'm <span class="parisa">Parisa</span> </h1>
                 <h4>& also a Web Developer</h4>
@@ -56,7 +58,18 @@
         </section>
     </div>
     <main>
-        <section class="about-me">
+        <section class="social-media">
+            <div class="social-line"></div>
+            <ul class="social-links">
+                <li class="social-item"><a href="https://www.linkedin.com/in/parisa-taheri-a6688a13b/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li class="social-item"><a href="https://github.com/Parisa7422"><i
+                            class="fab fa-brands fa-github"></i></a></li>
+                <li class="social-item"><a href=""><i class="fab fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </section>
+
+        <section id="about-me">
             <div class="intro-img">
                 <img class="about-bg" src="/images/header-img.png" alt="profile picture">
             </div>
@@ -77,7 +90,7 @@
                 </div>
         </section>
 
-        <section class="skills">
+        <section id="skills">
             <div class="skill-text">
                 <h2>Skills & Experiences</h2>
                 <p class="skill-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -153,7 +166,7 @@
                     </div>
                 </div>
         </section>
-        <section class="contact-me">
+        <section id="contact-me">
             <div class="contact-form">
                 <h2>Contact Me</h2>
                 <form onsubmit="SendMail(); reset(); return false;">
