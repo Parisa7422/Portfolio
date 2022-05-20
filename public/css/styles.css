@@ -625,3 +625,29 @@ textarea:focus~label {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .social-line {
+        left: 20px;
+    }
+
+    .social-media {
+        left: 0;
+        bottom: 0;
+        width: 40px;
+    }
+
+    .fab {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2em;
+        padding-top: 5px;
+    }
+
+    .fa-github {
+        font-size: 1.99em;
+        padding: 0;
+    }
+
+
+}
