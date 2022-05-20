@@ -113,12 +113,12 @@ nav {
     background: linear-gradient(to top, #D6D2CE, var(--clr-primary-200));
     width: 100%;
     height: 100vh;
+    padding-top: 10%;
 }
 
 #introduce {
     width: 80%;
     height: 100%;
-    padding-top: 3%;
     display: flex;
     margin: auto;
     align-items: center;
@@ -409,12 +409,9 @@ textarea:focus~label {
         top: 50%;
         transform: translate(-3%, -50%);
         cursor: pointer;
-
-
     }
 
     nav {
-        position: fixed;
         width: 100%;
         height: 10vh;
 
@@ -477,11 +474,12 @@ textarea:focus~label {
     /* INTRODUCE */
     #introduce {
         flex-direction: column;
-        padding-top: 10%;
     }
 
     .intro-text {
         margin-right: auto;
+        width: 100%;
+        padding-top: 20%;
     }
 
 
@@ -489,6 +487,10 @@ textarea:focus~label {
     .intro-text h1 {
         font-size: 2.3em;
 
+    }
+
+    .intro-img {
+        flex: 1;
     }
 
     .intro-img img {
