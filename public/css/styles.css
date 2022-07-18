@@ -185,9 +185,13 @@ nav {
     flex: 30%;
 }
 
+.intro-text h1 {
+    position: absolute;
+}
+
 
 .intro-img {
-    flex: 48%;
+    flex: 45%;
     margin-top: auto;
 }
 
@@ -196,8 +200,12 @@ nav {
 }
 
 .bio {
-    flex: 22%;
+    flex: 25%;
     padding-top: 40%;
+}
+
+.bio h4 {
+    text-align: right;
 }
 
 .parisa {
@@ -205,7 +213,14 @@ nav {
 }
 
 .cta {
-    margin: 3% 0 0 0;
+    position: relative;
+}
+
+.cta button {
+    margin-top: 4%;
+    position: absolute;
+    right: 0;
+
 }
 
 .btn-hire-me {
@@ -242,7 +257,6 @@ nav {
 }
 
 .about-text {
-    padding-left: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -461,9 +475,8 @@ textarea:focus~label {
 
 @media screen and (max-width: 900px) {
 
-    #about-me .intro-img {
-        display: none;
-    }
+
+
 
     .line {
         width: 30px;
@@ -545,9 +558,7 @@ textarea:focus~label {
     }
 
     /* INTRODUCE */
-    #introduce {
-        flex-direction: column;
-    }
+
 
     .intro-text {
         margin-right: auto;
@@ -558,17 +569,14 @@ textarea:focus~label {
 
 
     .intro-text h1 {
-        font-size: 2.3em;
+        font-size: 2em;
+        position: absolute;
 
     }
 
-    .intro-img {
-        flex: 1;
-    }
 
-    .intro-img img {
-        width: 100%;
-    }
+
+
 
     /* ABOUT SECTION */
 
@@ -654,11 +662,8 @@ textarea:focus~label {
     }
 
     .intro-img img {
-        max-width: 90%;
-        height: auto;
-        padding-left: 10%;
+        height: 80vh;
     }
-
 
     .social-line {
         left: 20px;
