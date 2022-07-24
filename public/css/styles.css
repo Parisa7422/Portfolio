@@ -269,7 +269,7 @@ nav {
 /************* SKILLS SECTION ****************/
 #skills {
     display: flex;
-    padding-top: 12%;
+    padding-top: 10%;
 }
 
 #skills h2 {
@@ -286,7 +286,7 @@ nav {
 }
 
 .skill-description {
-    padding-right: 15%;
+    padding-right: 45%;
 }
 
 .design-skills h3,
@@ -357,7 +357,7 @@ nav {
 
 /***************** Contact me *****************/
 #contact-me {
-    padding-top: 15%;
+    padding-top: 5%;
     padding-bottom: 7%;
     display: flex;
 }
@@ -473,10 +473,24 @@ textarea:focus~label {
 
 /*********************** MEDIA QUERY ************************/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 910px) {
 
 
+    .bio {
+        left: 10%;
+        position: absolute;
+        top: -15%;
+        font-size: 0.6em;
+    }
 
+    .bio h4 {
+        font-size: 1.5em;
+    }
+
+    .cta button {
+        width: 100px;
+        height: 40px;
+    }
 
     .line {
         width: 30px;
