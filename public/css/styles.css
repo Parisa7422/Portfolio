@@ -703,3 +703,13 @@ textarea:focus~label {
 
 
 }
+
+@media screen and (max-width: 375px) {
+    .intro-text {
+        padding-top: 30%;
+    }
+
+    .intro-img img {
+        height: 60vh;
+    }
+}
