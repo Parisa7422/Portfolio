@@ -704,6 +704,17 @@ textarea:focus~label {
 
 }
 
+@media screen and (max-width: 445px) {
+    .intro-text {
+        padding-top: 30%;
+    }
+
+    .intro-img img {
+        height: 68vh;
+    }
+
+}
+
 @media screen and (max-width: 375px) {
     .intro-text {
         padding-top: 30%;
