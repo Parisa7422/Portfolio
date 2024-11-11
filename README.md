@@ -19,7 +19,7 @@ This is an earlier version of my personal portfolio website. It was built using 
 - **Web Design Basics**: Understood the importance of layout, typography, and styling in web design.
 
 ## Live Demo
-You can view the live demo of this portfolio on [GitHub Pages](https://parisa7422.github.io/portfolio-v1).
+You can view the live demo of this portfolio on [GitHub Pages](https://parisa7422.github.io/Portfolio-v1/).
 
 ## Acknowledgments
 This project was built as part of my initial learning in web development, focusing on mastering the fundamentals before moving on to more advanced technologies like **React**.
